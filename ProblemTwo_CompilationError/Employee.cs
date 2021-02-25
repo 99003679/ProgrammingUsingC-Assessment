@@ -13,13 +13,14 @@ namespace ProblemTwo_CompilationError
         public int EmpLevel { get; set; }
         private int NoOfLeaves { get; }
         public DateTime DateOfJoining { get; set; }
+        public int SPNO { get; set; }
 
         public Employee()
         {
             //Default number of leaves credited is 2 per month based on date of joining to the current date
             NoOfLeaves= GetMonthDifference(DateOfJoining, DateTime.Now) * 2;
         }
-        public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
+        public Employee(int eID,string eName,int eLevel, DateTime eDoJ, string leaves, string spno)
         {
 
         }
