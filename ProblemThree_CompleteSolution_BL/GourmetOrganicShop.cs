@@ -12,11 +12,7 @@ namespace ProblemThree_CompleteSolution_BL
         public string Oprod_name;
         private Dictionary<int, double> organicPriceDict;
 
-        public GourmetOrganicShop(int , string, )
-        {
-
-        }
-
+       
         public GourmetOrganicShop(int Gid, string Gname, Dictionary<int, double> organicPriceDict)
         {
             this.Oprod_id = Gid;
@@ -24,7 +20,23 @@ namespace ProblemThree_CompleteSolution_BL
             this.organicPriceDict = organicPriceDict;
         }
 
+
         public int ItemName { get; set; }
+
+        public override double PayPerPiece(int quantity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override double PayPerWeight(int weight)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double TaxOnTotalBill()
+        {
+            throw new NotImplementedException();
+        }
     }
     
 }
